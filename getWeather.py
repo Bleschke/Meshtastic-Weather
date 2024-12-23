@@ -66,7 +66,7 @@ if x["cod"] != "404":
 
     send_content = " ' " + current_weather + " ' "
 
-    os.system("meshtastic --ch-index 3 --sendtext" + send_content)
+    os.system("/usr/local/bin/meshtastic --ch-index 3 --sendtext" + send_content)
 
 else:
     print(" City Not Found ")
